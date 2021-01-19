@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/index.css">
+</head>
+<body>
+    <div id="btn">click me</div>
+    <div id="box" class="msg-box">
+        <div class="type iconfont"></div>
+        <div class="msg"></div>
+        <div class="close iconfont">&#xe62d;</div>
+    </div>
+    
+    <script type="module"> 
+        import msgBox from './index.js';
+
+        const btn = document.getElementById('btn');
+        const box = new msgBox('box', {
+            msg: '来一起聊天吧，主题是没有用的话题',
+            type: 'info',
+            position: [0.5, 0.5]
+        });
+
+        btn.addEventListener('click', function(e) {
+            box.show(function() {
+                setTimeout(function() {
+                    console.log('auto close');
+                    box.close();
+                }, 1000);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'iconfont';  /* project id 2336140 */
+    src: url('//at.alicdn.com/t/font_2336140_q3rta0kcigf.eot');
+    src: url('//at.alicdn.com/t/font_2336140_q3rta0kcigf.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_2336140_q3rta0kcigf.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_2336140_q3rta0kcigf.woff') format('woff'),
+    url('//at.alicdn.com/t/font_2336140_q3rta0kcigf.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_2336140_q3rta0kcigf.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family:"iconfont" !important;
+    font-size:20px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.msg-box {
+    max-width: 400px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    border: 1px solid silver;
+    flex-direction: row;
+    padding: 10px 10px;
+}
+
+.msg-box .msg {
+    padding-left: 10px;
+}
+
+.msg-box .close {
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
